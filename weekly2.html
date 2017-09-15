@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>세미나 정보</h3>
+<p></p>
+<p>1.주제 : 차세대 웹 표준 기술 HTML</p>
+<p>2.일정 : 5월 12일 14:00</p>
+<p>3.장소 : 공학관 2층 세미나실</p>
+<p>4.인원 : 선착순 100명</p>
+<p>5.비용 : 본교 학생 무료 (외부 참가자 5,000원)</p>
+<p>6.참가신청 : 아래 양식에 빠짐없이 기입하여 접수해 주세요</p>
+<h3>개인정보</h3>
+	<form action = "input.jsp" method = "post">
+	이름 <input type = "text" name = "name"> <br>
+	비밀번호 <input type = "password" name = "pass" >(수정시 필요) <br>
+<h3>참가정보</h3>
+<p>참가 유형 선택</p>
+	<input type = "radio" name = "fee" id = "free">
+	<label for ="free">무료(교내참가자)</label>
+	<input type = "radio" name = "fee" id = "pay" >
+	<label for ="pay">유료(교외참가자)</label>
+
+<p>관심 분야 선택</p>
+	<input type = "checkbox" name = "int" id = "html">
+	<label for ="html">HTML5 시맨틱</label>
+	<input type = "checkbox" name = "int" id = "css">
+	<label for ="css">css5</label>
+	<input type = "checkbox" name = "int" id = "W.S">
+	<label for ="W.S">Web Storage</label>
+	<input type = "checkbox" name = "int" id = "W.socket">
+	<label for ="W.socket">Web Socket</label>
+	<input type = "checkbox" name = "int" id = "canvas">
+	<label for ="canvas">Canvas</label>
+	<input type = "checkbox" name = "int" id = "geolo">
+	<label for ="geolo">Geolocation</label>
+<h3>선택사항</h3>
+직업
+<select name = "job">
+	<option value ="student">학생</option>
+	<option value ="webdev">웹개발</option>
+	<option value ="webdes">웹디자인</option>
+	<option value ="edu">교육관련</option>
+	<option value ="etc">기타</option><br>
+
+<p>남길 말씀</p>
+	<textarea name = "comment" rows = "5" cols ="50"> </textarea><br>
+	<input type = "submit" value = "Send" />
+	<input type = "reset" value = "Reset" />
+</form>
+
+</body>
+</html>
